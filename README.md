@@ -3,13 +3,13 @@
 
 # AND101 Project 4 - CodeMath
 
-Submitted by: **Your Name Here**
+Submitted by: **Eric Jacobs**
 
-Time spent: **X** hours spent in total
+Time spent: **12** hours spent in total
 
 ## Summary
 
-**Tip calculator** is an android app that **given a cost returns cost plus tip**
+**Sale calculator** is an android app that **given a list pricce and the quantity of units returns total tax, commision, gross sale amount, and net profit**
 
 If I had to describe this project in three (3) emojis, they would be: **emojis here**
 
@@ -30,15 +30,16 @@ The following STRETCH features are implemented:
 
 The following EXTRA features are implemented:
 
-- [ ] List anything else that you added to improve the app!
+- [X] multiply currency formatted outputs to dispplay Total Tax in dollars, commision payed, net profit and gross sale 
+      
 
-## Video Demo
+# MY GIF
+![](https://imgur.com/jqyyuCn.gif)
 
 Here's a video / GIF that demos all of the app's implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Demo' width='' alt='Video Demo' />
 
-GIF created with **your chosen GIF tool**
+GIF created with **ScreenToGif**
 
 <!-- Recommended tools:
 - [Kap](https://getkap.co/) for macOS
@@ -47,7 +48,8 @@ GIF created with **your chosen GIF tool**
 
 ## Notes
 
-Here's a place for any other notes on the app, it's creation process, or what you learned this unit!
+This unit really helped me bring together the concept of mobile UI programing and was a very enjoyable project.
+My understanding of using constraint layouts has greatly improved.
 
 ## License
 
