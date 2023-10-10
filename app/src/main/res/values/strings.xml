@@ -1,11 +1,34 @@
 <resources>
     <string name="app_name">and101_hw4_tipcalc</string>
-    <string name="how_was_the_service">How was the service?</string>
-    <string name="cost_of_service">cost of service</string>
+
+    <string name="how_was_the_service">Enter List price?</string>
+    <string name="cost_of_service">List price</string>
+
+    <string name="units_sold">Unit QTY</string>
+    <string name="units_question">How many units</string>
+
+
     <string name="calculate">Calculate</string>
-    <string name="amazing_15">Amazing (15%)</string>
-    <string name="amazing_20">Amazing (20%)</string>
-    <string name="tip_amount">Tip Amount: %s</string>
-    <string name="round_up_tip">Round up tip?</string>
-    <string name="good_18">Good (18%)</string>
+
+    <string name="gross_amount">Gross Amount: %s</string>
+    <string name="Commission_amount">commission Amount: %s</string>
+    <string name="tax_amount">Tax Amount: %s</string>
+    <string name="net_amount">Net Amount: %s</string>
+
+    <string name="round_up_tip">Round up?</string>
+
+    <string name="commission_header">Tier</string>
+    <string name="amazing_15">Tier I</string>
+    <string name="good_18">Tier II</string>
+    <string name="amazing_20">Tier III</string>
+
+    <string name="state_header">Tax rate</string>
+    <string name="NY_tax">NY (4.875%)</string>
+    <string name="NJ_tax">NJ (6.625%)</string>
+    <string name="CT_tax">CT (6.35%)</string>
+
+    <string name="sales_header">Partner Type</string>
+    <string name="sales_0">Independent</string>
+    <string name="sales_10">Wholesaler</string>
+    <string name="sales_50">Distributor</string>
 </resources>

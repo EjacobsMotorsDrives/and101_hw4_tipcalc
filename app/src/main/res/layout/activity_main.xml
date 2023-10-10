@@ -26,12 +26,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cost_of_service"
         />
-<RadioGroup
+
+    <EditText
+        android:id="@+id/units_sold"
+        android:layout_height="wrap_content"
+        android:layout_width="160dp"
+        app:layout_constraintStart_toEndOf="@id/cost_of_service"
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="numberDecimal"
+        android:hint="@string/units_sold"
+        android:autofillHints="enter" />
+
+    <TextView
+        android:id="@+id/units_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/units_question"
+        app:layout_constraintStart_toStartOf="@id/units_sold"
+        app:layout_constraintTop_toBottomOf="@id/units_sold"
+        />
+
+    <TextView
+        android:id="@+id/commission_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/commission_header"
+        app:layout_constraintStart_toStartOf="@id/tip_options"
+        app:layout_constraintTop_toBottomOf="@id/service_question"
+        />
+
+
+    <RadioGroup
     android:id="@+id/tip_options"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    app:layout_constraintTop_toBottomOf="@id/service_question"
+    app:layout_constraintTop_toBottomOf="@id/commission_header"
     app:layout_constraintStart_toStartOf="parent"
     android:checkedButton="@id/option_twenty_percent"
     >
@@ -62,6 +92,98 @@
 
 </RadioGroup>
 
+    <TextView
+        android:id="@+id/state_header"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/state_header"
+        app:layout_constraintStart_toStartOf="@id/state_options"
+        app:layout_constraintTop_toBottomOf="@id/service_question"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/state_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/sales_header"
+        app:layout_constraintStart_toEndOf="@id/tip_options"
+        android:checkedButton="@id/option_NY"
+        >
+
+        <RadioButton
+            android:id="@+id/option_NY"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/NY_tax"
+            />
+
+
+
+        <RadioButton
+            android:id="@+id/option_NJ"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/NJ_tax"
+            />
+
+        <RadioButton
+            android:id="@+id/CT"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/CT_tax"
+            />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/sales_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sales_header"
+        app:layout_constraintStart_toStartOf="@id/sales_options"
+        app:layout_constraintTop_toBottomOf="@id/service_question"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/sales_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/sales_header"
+        app:layout_constraintStart_toEndOf="@id/state_options"
+        android:checkedButton="@id/sales_0"
+        >
+
+        <RadioButton
+            android:id="@+id/sales_0"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/sales_0"
+            />
+
+
+
+        <RadioButton
+            android:id="@+id/sales_10"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/sales_10"
+            />
+
+        <RadioButton
+            android:id="@+id/sales_50"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/sales_50"
+            />
+
+
+    </RadioGroup>
+
     <Switch
         android:id="@+id/round_up_switch"
         android:layout_width="0dp"
@@ -83,13 +205,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
 
-<TextView
-    android:id="@+id/tip_result"
+    <TextView
+    android:id="@+id/gross_result"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toBottomOf="@id/calculate_button"
-    tools:text="Tip Amount: $10"/>
+    tools:text="@string/gross_amount"/>
+    <TextView
+        android:id="@+id/comresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gross_result"
+        tools:text="@string/Commission_amount"/>
+    <TextView
+        android:id="@+id/taxresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/comresult"
+        tools:text="@string/tax_amount"/>
+    <TextView
+        android:id="@+id/netresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/taxresult"
+        tools:text="@string/net_amount"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
